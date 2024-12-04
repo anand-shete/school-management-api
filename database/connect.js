@@ -6,7 +6,7 @@ const db = mysql.createConnection({
     user: process.env.DB_USER,
     port: process.env.DB_PORT,
     password: process.env.DB_PASSWORD,
-    database: 'school_management',
+    database: process.env.DB_NAME,
 });
 db.connect((err)=> {
     if(err) console.log('Db error',err)
