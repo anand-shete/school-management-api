@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../connect');
+const db = require('../database/connect');
 
 // Add School API
 router.post('/addSchool', async (req, res) => {
