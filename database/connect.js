@@ -10,6 +10,6 @@ const db = mysql.createConnection({
 });
 db.connect((err)=> {
     if(err) console.log('Db error',err)
-    console.log('Db Connected');        
+    else console.log('Db Connected');        
 })
 module.exports = db.promise();
